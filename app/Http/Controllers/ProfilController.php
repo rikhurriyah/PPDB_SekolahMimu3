@@ -16,7 +16,8 @@ class ProfilController extends Controller
             ->where('role', '=',1)
             ->get();
         return view('dashboard.admin.profil', compact('data','dt'));
-   }public function update(Request $request, $id){
+   }
+   public function update(Request $request, $id){
     $this->validate($request,[
         'name'=>'required',
         'email'=>'required',
@@ -34,4 +35,5 @@ class ProfilController extends Controller
 
     return redirect('/profil')->with('success','Profil Admin berhasil diupdate');
 }
+
 }

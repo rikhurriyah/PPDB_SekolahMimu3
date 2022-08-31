@@ -37,7 +37,7 @@
                 </div>
                 </div>
             </div>
-            
+
         </div>
         </div>
         <div class="col-lg-4">
@@ -51,7 +51,25 @@
         <div class="card">
           <div class="card-body">
             <h1 class="card-title">Dashboard</h1>
-            <a target="_black" href="{{  url('cetak/'.\Auth::user()->id) }}" class="btn btn-success" style="color:white; width: 100px">Cetak</a>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Petunjuk Pendaftaran</h5>
+                  <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Isi Biodata</li>
+                    <li class="list-group-item">Isi Data Orang Tua</li>
+                    <li class="list-group-item">Isi Data Pendukung</li>
+                    <li class="list-group-item">Setalah Semua Terisi Cetak Formulir Pendaftaran</li>
+                  </ol>
+
+                </div>
+              </div>
+
+            <?php
+            if ( ($biodata >= 1) and ($dataortu >= 1) and ($datapendukung >= 1)) { ?>
+                <a target="_black" href="{{  url('cetak/'.\Auth::user()->id) }}" class="btn btn-success" style="color:white; width: 150px">Cetak</a>
+            <?php } else { ?>
+                <button type="button" class="btn btn-success " style="color:white; width: 150px" disabled><span>Cetak </span><i class="bi bi-lock-fill"></i></button>
+            <?php } ?>
           </div>
         </div>
       </div>

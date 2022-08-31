@@ -40,6 +40,6 @@ class PendaftarController extends Controller
         return view('dashboard.admin.lihat', compact('data','pic'));
     }
     public function excel(){
-        return Excel::download(new PendaftarExport, 'datapendaftar.xlsx');
+        return Excel::download(new PendaftarExport, 'datapendaftar.xls');
     }
 }

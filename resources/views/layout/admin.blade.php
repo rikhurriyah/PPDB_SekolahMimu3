@@ -1,23 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>@yield('judul')</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
   <link href="{{ asset('templateadmin/') }}/assets/img/logo.svg" >
-
-  <!-- Google Fonts -->
   <link href="{{ asset('templateadmin/') }}/https://fonts.gstatic.com" rel="preconnect">
   <link href="{{ asset('templateadmin/') }}/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="{{ asset('templateadmin/') }}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="{{ asset('templateadmin/') }}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="{{ asset('templateadmin/') }}/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -25,25 +16,18 @@
   <link href="{{ asset('templateadmin/') }}/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="{{ asset('templateadmin/') }}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="{{ asset('templateadmin/') }}/assets/vendor/simple-datatables/style.css" rel="stylesheet">
-    <link href="summernote/summernote.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
+  <link href="summernote/summernote.css" rel="stylesheet">
   <link href="{{ asset('templateadmin/') }}/assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
-
     <div class="d-flex align-items-center justify-content-between">
       <a href="" class=" d-flex align-items-center">
         <img src="{{ asset('templateadmin/') }}/assets/img/logo2.svg" alt="">
-
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
-
     {{--  <div class="search-bar">
       <form class="search-form d-flex align-items-center" method="POST" action="#">
         <input type="text" name="query" placeholder="Search" title="Enter search keyword">
@@ -54,7 +38,6 @@
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
-
         {{--  <li class="nav-item d-block d-lg-none">
           <a class="nav-link nav-icon search-bar-toggle " href="#">
             <i class="bi bi-search"></i>
@@ -72,18 +55,16 @@
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6>{{ Auth::user()->name }}</h6>
-
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
-
-
             <li>
-              <hr class="dropdown-divider">
-            </li>
-
-
+                <a class="dropdown-item d-flex align-items-center" href="/profil">
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
             <li>
               <hr class="dropdown-divider">
             </li>

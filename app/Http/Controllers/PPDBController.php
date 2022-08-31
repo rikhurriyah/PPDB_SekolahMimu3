@@ -22,6 +22,9 @@ class PPDBController extends Controller
             return view('ppdb.index');
 
     }
+    public function loginsiswa(){
+        return view('layouts.loginsiswa');
+    }
     public function store(Request $request){
         $this->validate($request,[
             'nama'=>'required',

@@ -18,8 +18,11 @@ class DashboardController extends Controller
         $pendaftar = User::where('role', 2)->count();
         $admin = User::where('role', 1)->count();
         $user_id = Auth::user()->id;
+        $biodata = biodata::where('users', Auth::user()->id)->count();
+        $dataortu = dataortu::where('users', Auth::user()->id)->count();
+        $datapendukung = datapendukung::where('users', Auth::user()->id)->count();
 
-        return view('dashboard.index', compact('admin', 'pendaftar'));
+        return view('dashboard.index', compact('admin', 'pendaftar','biodata','dataortu', 'datapendukung'));
     }
     public function cetak(Request $request, $id){
         $img = base_path('logo.png');

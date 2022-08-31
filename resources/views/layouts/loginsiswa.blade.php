@@ -39,14 +39,13 @@
               <div class="card mb-3">
                 <div class="card-body">
                   <div class="alert alert-success m-3">
-                     Login untuk <b>Calon Siswa</b> silahkan <a href="{{ url('loginsiswa') }}" class="text-primary" style="text-decoration:none;">Klik Disini</a>
+                     Login untuk <b>Admin</b> silahkan <a href="{{ url('login') }}" class="text-primary" style="text-decoration:none;">Klik Disini</a>
                   </div>
                   <div class="pt-0 pb-2">
                     <div class=" d-flex justify-content-center py-4">
-                          <img src="{{ asset('templateadmin/') }}/assets/img/loginadmin.svg" alt="">
+                          <img src="{{ asset('templateadmin/') }}/assets/img/loginsiswa.svg" alt="">
                       </div>
-
-                      <p class="text-center small">Masukkan Email dan Password
+                      <p class="text-center small">Masukkan Email dan Nisn
                     </p>
                   </div>
 
@@ -62,7 +61,7 @@
                     </div>
 
                     <div class="col-12">
-                      <label for="password" class="form-label">Password</label>
+                      <label for="password" class="form-label">NISN</label>
                       <input type="password" name="password" class="form-control" id="password" required>
                       <div class="invalid-feedback">Please enter your password!</div>
                     </div>

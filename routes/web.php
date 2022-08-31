@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [\App\Http\Controllers\PPDBController::class,'index1']);
+Route::get('/loginsiswa', [\App\Http\Controllers\PPDBController::class,'loginsiswa']);
 Route::get('/index', [\App\Http\Controllers\PPDBController::class,'index'])->name('ppdb.index');
 Route::post('/index', [\App\Http\Controllers\PPDBController::class,'store'])->name('ppdb.store');
 
@@ -30,10 +31,10 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/infosekolah',  [\App\Http\Controllers\InfoController::class,'infosekolah']);
     Route::post('/infosekolah/{users}',  [\App\Http\Controllers\InfoController::class,'storesekolah']);
     Route::put('/infosekolah/{users}',  [\App\Http\Controllers\InfoController::class,'updatesekolah']);
+    Route::post('/ubahpassword', [\App\Http\Controllers\ChangePasswordController::class,'store']);
+
 
 });
 
 Auth::routes();
-// Route::get('/home',function(){
-//     return redirect('dashboard');
-// });
+
