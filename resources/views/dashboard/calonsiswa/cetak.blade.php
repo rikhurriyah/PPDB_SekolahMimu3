@@ -28,7 +28,7 @@
             margin-left:10px;
             left:50%;
             transform: translate(-50%,0%);
-            
+
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -40,7 +40,7 @@
             width: 100%;
             background-color: #fffd84;
             height: 15%;
-            
+
         }
         .isi{
 
@@ -72,14 +72,14 @@
                 <td class="tengah" >
                     <img src="@php echo $pic  @endphp" style="float: left; padding:15px; " alt="" width="100px">
                     <h2 style="margin-left:100px; font-size:16px">PANITIA PENERIMAAN PESERTA DIDIK BARU</h2>
-                    <h1 style="margin-left:100px; font-size:30px">MA MA'ARIF MIFTAHUL ULUM</h1>
+                    <h1 style="margin-left:100px; font-size:30px">MI MIFTAHUL ULUM III</h1>
                     <h3 style="margin-left:100px; font-size:16px">(Terakreditasi "A")</h3>
-                    <h2 style="margin-left:100px; font-size:16px">MELIRANG BUNGAH GRESIK</h2>
+                    <h2 style="margin-left:100px; font-size:16px">PERENG KULON BUNGAH GRESIK</h2>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center; background-color:rgb(28, 151, 23); margin-top:0">
-                    <h7 style="color: white; font-size:12px">Sekretariat : Jl. Raya Melirang No.29 Bungah Gresik 61152 Telp. (031) 3944772 Email : mam_miftahululum@yahoo.com</h7>
+                    <h7 style="color: white; font-size:12px">Sekretariat : Pereng Kulon Melirang Bungah Gresik 61152 Telp. (085) 748000337 Email : mimu3pk@gmail.com</h7>
                 </td>
             </tr>
         </table>
@@ -87,8 +87,8 @@
     <div >
         <br>
         <h1 class="isi" style="font-size:16px">FORMULIR PENDAFTARAN CALON PESERTA DIDIK BARU</h1>
-        <h2 class="isi" style="font-size:16px">TAHUN PELAJARAN 2022/2023</h2>
-        
+        <h2 class="isi" style="font-size:16px">TAHUN PELAJARAN 2023/2024</h2>
+
         <table class="isi2">
             @foreach ( $data as $k)
             <tr style="font-family: Comic Sans MS; line-height:10px">
@@ -182,7 +182,7 @@
                 <td></td>
                 <td></td>
                 <td width="250px">a. Nama</td><td>: {{  $k->nama_ayah }}</td>
-         
+
             </tr>
             <tr>
                 <td></td>
@@ -304,7 +304,7 @@
             </tr>
         </table>
         <table class="isi2">
-            
+
             <tr style="font-family: Comic Sans MS; line-height:10px">
                 <td><strong >C. </strong></td>
                 <td colspan="4"><strong >Identitas Sekolah Asal</strong></td>
@@ -361,19 +361,19 @@
                 <td></td>
                 <td  width="400px">1. Foto Copy Ijazah (Legalisir) 2 Lembar</td></tr>
             <tr>
-                
+
                 <td></td>
                 <td  width="400px">2. Foto Copy SHUN (Legalisir) dan NISN 2 Lembar</td></tr>
             <tr>
-                
+
                 <td></td>
                 <td  width="400px">3. Foto Copy Kartu Keluarga 2 Lembar</td></tr>
             <tr>
-                
+
                 <td></td>
                 <td  width="400px">4. Foto Copy KIP, KKS, KPS, PKH (Jika Memiliki)</td></tr>
             <tr>
-                
+
                 <td></td>
                 <td  width="400px">5. Pas Foto 3x4 (Hitam Putih) 2 Lembar</td></tr>
 
@@ -383,7 +383,7 @@
     <br>
     <div style="font-family: Comic Sans MS;">
         <div style="float:right">
-            Gresik, ......................
+            Gresik, {{ date('d-m-Y')}}
             <br>
             Calon Peserta Didik,
             <br>
@@ -392,7 +392,7 @@
             <br><br>
             ({{ Auth::user()->name }})
         </div>
-       
+
         <div style="float:left">
             Panitia PPDB,
             <br>
@@ -404,13 +404,13 @@
             .....................................
         </div>
     </div>
-    
+
          <div class="kotak">
             <p>Pas Foto 3x4</p>
          </div>
-         
 
-    
-        
+
+
+
 </body>
 </html>

@@ -39,6 +39,6 @@ class DashboardController extends Controller
         $domppdf->loadHtml($html);
         $domppdf->setPaper('f4', 'portrait');
         $domppdf->render();
-        $domppdf->stream('Formulir.pdf');
+        $domppdf->stream('Transaksi'.date('Y-m-d_H-i-s').'pdf');
     }
 }

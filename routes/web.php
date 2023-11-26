@@ -25,7 +25,13 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class,'index']);
     Route::get('/excel',  [\App\Http\Controllers\PendaftarController::class,'excel']);
     Route::get('/pendaftar', [\App\Http\Controllers\PendaftarController::class,'index']);
-    Route::get('/lihat', [\App\Http\Controllers\PendaftarController::class,'lihat']);
+    Route::get('/laporan', [\App\Http\Controllers\PendaftarController::class,'laporan']);
+    Route::get('/akun', [\App\Http\Controllers\PendaftarController::class,'akun']);
+    Route::get('/tambahakun', [\App\Http\Controllers\PendaftarController::class,'tambahakun']);
+    Route::post('/tambahakun', [\App\Http\Controllers\PendaftarController::class,'store'])->name('pendaftar.store');
+    Route::get('/hapusakun/{id}', [App\Http\Controllers\PendaftarController::class,'hapusakun']);
+    Route::get('/hapus/{users}', [App\Http\Controllers\PendaftarController::class,'hapus']);
+    Route::get('/lihat/{users}', [\App\Http\Controllers\PendaftarController::class,'lihat']);
     Route::get('/profil', [\App\Http\Controllers\ProfilController::class,'index']);
     Route::put('/profil/{users}', [\App\Http\Controllers\ProfilController::class,'update']);
     Route::get('/infosekolah',  [\App\Http\Controllers\InfoController::class,'infosekolah']);

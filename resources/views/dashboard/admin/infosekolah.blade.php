@@ -167,7 +167,7 @@
         </div>
         <div class="text-center">
           <button type="submit" class="btn btn-primary">Update</button>
-          <a href="/info" class="btn btn-dark" style="color:white; width: 100px">Kembali</a>
+          <a href="/dashboard" class="btn btn-dark" style="color:white; width: 100px">Kembali</a>
         </div>
       </form>
       @endif

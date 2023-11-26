@@ -18,6 +18,9 @@
   <link href="{{ asset('templateadmin/') }}/assets/vendor/simple-datatables/style.css" rel="stylesheet">
   <link href="summernote/summernote.css" rel="stylesheet">
   <link href="{{ asset('templateadmin/') }}/assets/css/style.css" rel="stylesheet">
+      @stack('css')
+
+
 </head>
 
 <body>
@@ -50,7 +53,7 @@
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="{{ Auth::user()->photo }}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">{{ Auth::user()->name }}</span>
-          </a><!-- End Profile Iamge Icon -->
+          </a>
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -114,12 +117,22 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Pendaftar</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-menu-button-wide"></i><span>Peserta PPDB</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="/pendaftar">
-              <i class="bi file-person"></i><span>Data Pendaftar</span>
+              <i class="bi file-person"></i><span>Data Peserta PPDB</span>
+            </a>
+          </li>
+          <li>
+            <a href="/laporan">
+              <i class="bi file-person"></i><span>Laporan Peserta PPDB</span>
+            </a>
+          </li>
+          <li>
+            <a href="/akun">
+              <i class="bi file-person"></i><span>Akun Peserta Terdaftar</span>
             </a>
           </li>
         </ul>
@@ -170,6 +183,8 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+      @stack('js')
+
   <script src="{{ asset('templateadmin/') }}/assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="{{ asset('templateadmin/') }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="{{ asset('templateadmin/') }}/assets/vendor/chart.js/chart.min.js"></script>

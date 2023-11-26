@@ -11,7 +11,7 @@
             <div class="col-xxl-6 col-md-6">
             <div class="card info-card revenue-card">
                 <div class="card-body">
-                <h5 class="card-title">Jumlah Admin</span></h5>
+                <h5 class="card-title" style="font-family: Comic Sans MS; color: black">Jumlah Admin</span></h5>
                 <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                     <i class="bi bi-person-fill"></i>
@@ -26,7 +26,7 @@
             <div class="col-xxl-6 col-md-6">
             <div class="card info-card sales-card">
                 <div class="card-body">
-                <h5 class="card-title">Jumlah Pendaftar PPDB</span></h5>
+                <h5 class="card-title" style="font-family: Comic Sans MS; color: black">Jumlah Pendaftar PPDB</span></h5>
                 <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                     <i class="bi bi-person-check-fill"></i>
@@ -53,7 +53,7 @@
             <h1 class="card-title">Dashboard</h1>
             <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Petunjuk Pendaftaran</h5>
+                  <h5 class="card-title" style="font-family: Comic Sans MS; color: black">Petunjuk Pendaftaran</h5>
                   <ol class="list-group list-group-numbered">
                     <li class="list-group-item">Isi Biodata</li>
                     <li class="list-group-item">Isi Data Orang Tua</li>

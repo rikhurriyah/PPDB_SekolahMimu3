@@ -47,8 +47,8 @@
                   <form class="row g-3 needs-validation" action="{{ route('ppdb.store')}}" method="POST" novalidate enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="col-12">
-                        <label for="nama" class="form-label">Nama peserta</label>
-                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama Peserta">
+                        <label for="nama" class="form-label">Nama Lengkap peserta</label>
+                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama Lengkap Peserta">
                     </div>
                       <div class="col-12">
                         <label for="nisn" class="form-label">NISN</label>
@@ -104,7 +104,7 @@
   <script src="{{ asset('templateadmin/') }}/assets/vendor/php-email-form/validate.js"></script>
   <script src="{{ asset('templateadmin/') }}/assets/js/main.js"></script>
 
-  
+
 </body>
 
 </html>

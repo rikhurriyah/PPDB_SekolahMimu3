@@ -87,7 +87,7 @@
             <label for="jns_kelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
             <div class="col-sm-4">
                 <select id="" class="form-select" name="jns_kelamin" >
-                    
+
                     <option value="Laki-laki"{{ $dt->jns_kelamin =="Laki-laki" ? 'selected' : ''}}>Laki-Laki</option>
                     <option value="Perempuan"{{ $dt->jns_kelamin =="Perempuan" ? 'selected' : ''}}>Perempuan</option>
                 </select>
